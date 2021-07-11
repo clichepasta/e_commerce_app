@@ -29,45 +29,6 @@ class _gridViewState extends State<gridView> {
     return MaterialApp(
       home: Scaffold(
           body: Column(children: [
-        Container(
-          color: Colors.white,
-          height: 50.0,
-
-          child: Row(
-            children: [
-              SizedBox(
-                width: 20,
-              ),
-              Text(
-                'View',
-                style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20),
-              ),
-              SizedBox(
-                width: 230,
-              ),
-              Row(
-                children: [
-                  Container(
-                    child: IconButton(
-                      onPressed: () {},
-                      icon: Icon(Icons.grid_on_outlined),
-                    ),
-                  ),
-                  Container(
-                    child: IconButton(
-                        iconSize: 30,
-                        onPressed: () {
-                          navigateTohome2(context);
-                        },
-                        icon: Icon(Icons.list_alt_outlined)),
-                  ),
-                ],
-              ),
-            ],
-          ),
-
-          //
-        ),
         Expanded(
             child: GridView.count(
           primary: false,

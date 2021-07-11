@@ -14,7 +14,7 @@ class bottomNav extends StatefulWidget {
 class _bottomNavState extends State<bottomNav> {
   int _currentIndex = 0;
   final tabs = [
-    Home2(),
+    Home(),
     yourorders(),
     profilePage(),
   ];

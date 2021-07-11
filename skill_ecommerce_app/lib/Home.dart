@@ -31,7 +31,56 @@ class _HomeState extends State<Home> {
             )
           ],
         ),
-        body: viewCheck ? gridView() : listView());
+        body: Column(
+          children: [
+            Container(
+              color: Colors.white,
+              height: 50.0,
+
+              child: Row(
+                children: [
+                  SizedBox(
+                    width: 20,
+                  ),
+                  Text(
+                    'View',
+                    style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20),
+                  ),
+                  SizedBox(
+                    width: 230,
+                  ),
+                  Row(
+                    children: [
+                      Container(
+                        child: IconButton(
+                          onPressed: () {
+                            setState(() {
+                              viewCheck = true;
+                            });
+                          },
+                          icon: Icon(Icons.grid_on_outlined),
+                        ),
+                      ),
+                      Container(
+                        child: IconButton(
+                            iconSize: 30,
+                            onPressed: () {
+                              setState(() {
+                                viewCheck = false;
+                              });
+                            },
+                            icon: Icon(Icons.list_alt_outlined)),
+                      ),
+                    ],
+                  ),
+                ],
+              ),
+
+              //
+            ),
+            Expanded(child: viewCheck ? gridView() : listView())
+          ],
+        ));
 //
   }
 }

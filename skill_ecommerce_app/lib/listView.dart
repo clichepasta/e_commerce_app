@@ -27,42 +27,6 @@ class _listViewState extends State<listView> {
         children: [
           Container(
             color: Colors.white,
-            height: 50.0,
-            child: Row(
-              children: [
-                SizedBox(
-                  width: 20,
-                ),
-                Text(
-                  'View',
-                  style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20),
-                ),
-                SizedBox(
-                  width: 230,
-                ),
-                Row(
-                  children: [
-                    Container(
-                      child: IconButton(
-                        onPressed: () {},
-                        icon: Icon(Icons.grid_on_outlined),
-                      ),
-                    ),
-                    Container(
-                      child: IconButton(
-                          iconSize: 30,
-                          onPressed: () {},
-                          icon: Icon(Icons.list_alt_outlined)),
-                    ),
-                  ],
-                ),
-              ],
-            ),
-
-            //
-          ),
-          Container(
-            color: Colors.white,
             height: 150,
             padding: EdgeInsets.all(10),
             child: RaisedButton(
