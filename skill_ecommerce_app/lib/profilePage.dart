@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:skill_ecommerce_app/loginPage.dart';
 
 class profilePage extends StatefulWidget {
   const profilePage({Key? key}) : super(key: key);
@@ -8,6 +9,11 @@ class profilePage extends StatefulWidget {
 }
 
 class _profilePageState extends State<profilePage> {
+  Future navigateToSubPage(context) async {
+    Navigator.push(
+        context, MaterialPageRoute(builder: (context) => loginPage()));
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -15,10 +21,14 @@ class _profilePageState extends State<profilePage> {
           child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          Icon(
-            Icons.person_outline,
-            color: Colors.grey[600],
-            size: 100,
+          CircleAvatar(
+            radius: 70,
+            backgroundColor: Colors.grey,
+            child: Icon(
+              Icons.person_outline,
+              color: Colors.white,
+              size: 100,
+            ),
           ),
           Padding(
               padding: EdgeInsets.fromLTRB(0, 10, 10, 100),
@@ -33,7 +43,9 @@ class _profilePageState extends State<profilePage> {
             minWidth: 300,
             height: 30,
             child: RaisedButton(
-              onPressed: () {},
+              onPressed: () {
+                navigateToSubPage(context);
+              },
               child: Text(
                 "Login",
                 style: TextStyle(color: Colors.blue[900]),

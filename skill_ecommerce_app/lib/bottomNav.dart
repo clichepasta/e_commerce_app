@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:skill_ecommerce_app/Home2.dart';
 import 'Home.dart';
 import 'yourOrders.dart';
 import 'profilePage.dart';
@@ -13,11 +14,11 @@ class bottomNav extends StatefulWidget {
 class _bottomNavState extends State<bottomNav> {
   int _currentIndex = 0;
   final tabs = [
-    Home(),
+    Home2(),
     yourorders(),
     profilePage(),
   ];
-  bottomNav sc = new bottomNav();
+  // bottomNav sc = new bottomNav();
   @override
   Widget build(BuildContext context) {
     return Scaffold(

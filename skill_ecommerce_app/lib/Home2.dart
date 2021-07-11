@@ -1,17 +1,17 @@
 import 'package:flutter/material.dart';
-import 'package:skill_ecommerce_app/bottomNav.dart';
-import 'package:skill_ecommerce_app/gridView.dart';
-import 'package:skill_ecommerce_app/listView.dart';
 
-class Home extends StatefulWidget {
-  const Home({Key? key}) : super(key: key);
+import 'gridView.dart';
+import 'listView.dart';
+
+class Home2 extends StatefulWidget {
+  const Home2({Key? key}) : super(key: key);
 
   @override
-  _HomeState createState() => _HomeState();
+  _Home2State createState() => _Home2State();
 }
 
-class _HomeState extends State<Home> {
-  bool viewCheck = true;
+class _Home2State extends State<Home2> {
+  bool viewCheck = false;
   @override
   Widget build(BuildContext context) {
     // int indexNow = 0;

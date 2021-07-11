@@ -1,43 +1,73 @@
-import 'package:flutter/material.dart';
+// import 'dart:js';
 
-class yourorders extends StatefulWidget {
-  const yourorders({Key? key}) : super(key: key);
+import 'package:flutter/material.dart';
+import 'package:skill_ecommerce_app/productPage.dart';
+import 'package:skill_ecommerce_app/profilePage.dart';
+import 'package:skill_ecommerce_app/yourOrders.dart';
+
+import 'Home.dart';
+
+class listView extends StatefulWidget {
+  const listView({Key? key}) : super(key: key);
 
   @override
-  _yourordersState createState() => _yourordersState();
+  _listViewState createState() => _listViewState();
 }
 
-class _yourordersState extends State<yourorders> {
+class _listViewState extends State<listView> {
+  Future navigateToproductPage(context) async {
+    Navigator.push(
+        context, MaterialPageRoute(builder: (context) => productPage()));
+  }
+
   @override
   Widget build(BuildContext context) {
-    return new Scaffold(
-      appBar: AppBar(
-        leading: Icon(
-          Icons.arrow_back_ios,
-          color: Colors.black,
-        ),
-        title: Text(
-          'Your Orders',
-          style: TextStyle(color: Colors.black, fontWeight: FontWeight.bold),
-        ),
-        backgroundColor: Colors.white,
-        centerTitle: true,
-      ),
+    return Scaffold(
       body: ListView(
         children: [
-          SizedBox(
-              height: 15,
-              child: Padding(
-                padding: EdgeInsets.symmetric(horizontal: 15),
-                child: Text('21st July'),
-              )),
+          Container(
+            color: Colors.white,
+            height: 50.0,
+            child: Row(
+              children: [
+                SizedBox(
+                  width: 20,
+                ),
+                Text(
+                  'View',
+                  style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20),
+                ),
+                SizedBox(
+                  width: 230,
+                ),
+                Row(
+                  children: [
+                    Container(
+                      child: IconButton(
+                        onPressed: () {},
+                        icon: Icon(Icons.grid_on_outlined),
+                      ),
+                    ),
+                    Container(
+                      child: IconButton(
+                          iconSize: 30,
+                          onPressed: () {},
+                          icon: Icon(Icons.list_alt_outlined)),
+                    ),
+                  ],
+                ),
+              ],
+            ),
+
+            //
+          ),
           Container(
             color: Colors.white,
             height: 150,
             padding: EdgeInsets.all(10),
             child: RaisedButton(
               onPressed: () {
-                // navigateToproductPage(context);
+                navigateToproductPage(context);
               },
               highlightElevation: 200,
               color: Colors.white,
@@ -79,19 +109,13 @@ class _yourordersState extends State<yourorders> {
               ),
             ),
           ),
-          SizedBox(
-              height: 15,
-              child: Padding(
-                padding: EdgeInsets.symmetric(horizontal: 15),
-                child: Text('21st July'),
-              )),
           Container(
             color: Colors.white,
             height: 150,
             padding: EdgeInsets.all(10),
             child: RaisedButton(
               onPressed: () {
-                // navigateToproductPage(context);
+                navigateToproductPage(context);
               },
               highlightElevation: 200,
               color: Colors.white,
@@ -133,19 +157,13 @@ class _yourordersState extends State<yourorders> {
               ),
             ),
           ),
-          SizedBox(
-              height: 15,
-              child: Padding(
-                padding: EdgeInsets.symmetric(horizontal: 15),
-                child: Text('21st July'),
-              )),
           Container(
             color: Colors.white,
             height: 150,
             padding: EdgeInsets.all(10),
             child: RaisedButton(
               onPressed: () {
-                // navigateToproductPage(context);
+                navigateToproductPage(context);
               },
               highlightElevation: 200,
               color: Colors.white,
@@ -187,19 +205,13 @@ class _yourordersState extends State<yourorders> {
               ),
             ),
           ),
-          SizedBox(
-              height: 15,
-              child: Padding(
-                padding: EdgeInsets.symmetric(horizontal: 15),
-                child: Text('21st July'),
-              )),
           Container(
             color: Colors.white,
             height: 150,
             padding: EdgeInsets.all(10),
             child: RaisedButton(
               onPressed: () {
-                //   navigateToproductPage(context);
+                navigateToproductPage(context);
               },
               highlightElevation: 200,
               color: Colors.white,
@@ -241,19 +253,13 @@ class _yourordersState extends State<yourorders> {
               ),
             ),
           ),
-          SizedBox(
-              height: 15,
-              child: Padding(
-                padding: EdgeInsets.symmetric(horizontal: 15),
-                child: Text('21st July'),
-              )),
           Container(
             color: Colors.white,
             height: 150,
             padding: EdgeInsets.all(10),
             child: RaisedButton(
               onPressed: () {
-                // navigateToproductPage(context);
+                navigateToproductPage(context);
               },
               highlightElevation: 200,
               color: Colors.white,
@@ -295,19 +301,13 @@ class _yourordersState extends State<yourorders> {
               ),
             ),
           ),
-          SizedBox(
-              height: 15,
-              child: Padding(
-                padding: EdgeInsets.symmetric(horizontal: 15),
-                child: Text('21st July'),
-              )),
           Container(
             color: Colors.white,
             height: 150,
             padding: EdgeInsets.all(10),
             child: RaisedButton(
               onPressed: () {
-                // navigateToproductPage(context);
+                navigateToproductPage(context);
               },
               highlightElevation: 200,
               color: Colors.white,
@@ -349,19 +349,13 @@ class _yourordersState extends State<yourorders> {
               ),
             ),
           ),
-          SizedBox(
-              height: 15,
-              child: Padding(
-                padding: EdgeInsets.symmetric(horizontal: 15),
-                child: Text('21st July'),
-              )),
           Container(
             color: Colors.white,
             height: 150,
             padding: EdgeInsets.all(10),
             child: RaisedButton(
               onPressed: () {
-                // navigateToproductPage(context);
+                navigateToproductPage(context);
               },
               highlightElevation: 200,
               color: Colors.white,
@@ -403,19 +397,13 @@ class _yourordersState extends State<yourorders> {
               ),
             ),
           ),
-          SizedBox(
-              height: 15,
-              child: Padding(
-                padding: EdgeInsets.symmetric(horizontal: 15),
-                child: Text('21st July'),
-              )),
           Container(
             color: Colors.white,
             height: 150,
             padding: EdgeInsets.all(10),
             child: RaisedButton(
               onPressed: () {
-                // navigateToproductPage(context);
+                navigateToproductPage(context);
               },
               highlightElevation: 200,
               color: Colors.white,
@@ -457,19 +445,13 @@ class _yourordersState extends State<yourorders> {
               ),
             ),
           ),
-          SizedBox(
-              height: 15,
-              child: Padding(
-                padding: EdgeInsets.symmetric(horizontal: 15),
-                child: Text('21st July'),
-              )),
           Container(
             color: Colors.white,
             height: 150,
             padding: EdgeInsets.all(10),
             child: RaisedButton(
               onPressed: () {
-                // navigateToproductPage(context);
+                navigateToproductPage(context);
               },
               highlightElevation: 200,
               color: Colors.white,
@@ -511,19 +493,13 @@ class _yourordersState extends State<yourorders> {
               ),
             ),
           ),
-          SizedBox(
-              height: 15,
-              child: Padding(
-                padding: EdgeInsets.symmetric(horizontal: 15),
-                child: Text('21st July'),
-              )),
           Container(
             color: Colors.white,
             height: 150,
             padding: EdgeInsets.all(10),
             child: RaisedButton(
               onPressed: () {
-                // navigateToproductPage(context);
+                navigateToproductPage(context);
               },
               highlightElevation: 200,
               color: Colors.white,
@@ -565,19 +541,13 @@ class _yourordersState extends State<yourorders> {
               ),
             ),
           ),
-          SizedBox(
-              height: 15,
-              child: Padding(
-                padding: EdgeInsets.symmetric(horizontal: 15),
-                child: Text('21st July'),
-              )),
           Container(
             color: Colors.white,
             height: 150,
             padding: EdgeInsets.all(10),
             child: RaisedButton(
               onPressed: () {
-                // navigateToproductPage(context);
+                navigateToproductPage(context);
               },
               highlightElevation: 200,
               color: Colors.white,
@@ -624,3 +594,13 @@ class _yourordersState extends State<yourorders> {
     );
   }
 }
+
+// Widget getListView() {
+//   Future navigateToproductPage(context) async {
+//     Navigator.push(
+//         context, MaterialPageRoute(builder: (context) => productPage()));
+//   }
+
+//   var listView =
+//   return listView;
+// }
