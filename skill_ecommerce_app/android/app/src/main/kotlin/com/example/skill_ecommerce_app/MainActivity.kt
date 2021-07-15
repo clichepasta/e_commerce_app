@@ -1,4 +1,4 @@
-package com.example.skill_ecommerce_app
+package com.skillweek2example
 
 import io.flutter.embedding.android.FlutterActivity
 

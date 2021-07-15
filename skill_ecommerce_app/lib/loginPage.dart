@@ -1,3 +1,4 @@
+// import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:skill_ecommerce_app/bottomNav.dart';
 import 'package:skill_ecommerce_app/profilePage.dart';
@@ -11,6 +12,10 @@ class loginPage extends StatefulWidget {
 }
 
 class _loginPageState extends State<loginPage> {
+  // late String _email;
+  // late String _password;
+  // final auth = FirebaseAuth.instance;
+
   Future navigateToHomepage(context) async {
     Navigator.push(
         context, MaterialPageRoute(builder: (context) => bottomNav()));
