@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "806396007922",
+    "project_id": "week2-ee727",
+    "storage_bucket": "week2-ee727.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:806396007922:android:367dabe76d9dcd8a82076b",
+        "android_client_info": {
+          "package_name": "com.example.skill_ecommerce_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "806396007922-mv1idf5uuam5niugt8k3ja7v4q236hpv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDzNLt_U3U5T6Nr6xf1lT6mballYFEwV8U"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "806396007922-mv1idf5uuam5niugt8k3ja7v4q236hpv.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
