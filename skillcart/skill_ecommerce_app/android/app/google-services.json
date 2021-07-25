@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "461600065376",
+    "project_id": "skillkart21",
+    "storage_bucket": "skillkart21.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:461600065376:android:20f1bed0308be3c329c005",
+        "android_client_info": {
+          "package_name": "com.example.skill_ecommerce_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "461600065376-h550mokjoum7ovp3ij91qjcjrj11ldkl.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.skill_ecommerce_app",
+            "certificate_hash": "3147281ea71a94707af90cc7bff542457474065a"
+          }
+        },
+        {
+          "client_id": "461600065376-hoq1dqflkkgeko7tkpdvf265etfipft3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCw2_bHLS0lj1Bi98uhfm1cpawEdlvfoHk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "461600065376-hoq1dqflkkgeko7tkpdvf265etfipft3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
